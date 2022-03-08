@@ -360,10 +360,6 @@ int main()
             logger = _logger
         end
 
-
-        local function getDebugInfo(msg)
-        end
-
         local function forward(method)
             return function(_, msg)
                 local top = debug.getinfo(2, "nSlf")
@@ -474,9 +470,7 @@ int main()
     Logger.rotate:dump_backtrace()
     Logger.rotate:disable_backtrace()
     ```
-
-    截图展示
-
+    
     - 控制台输出
 
         ![控制台输出](./screenshot/console.png)
