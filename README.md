@@ -441,7 +441,7 @@ int main()
 5. 使用
 
     ```lua
-    local Logger = require("logger")
+    local Logger = require("logger").getInstance()
 
     -- basic
     Logger.basic:set_level(spdlog.level.trace)
